@@ -45,3 +45,12 @@ end
 get '/blocks' do
   erb :blocks
 end
+
+get '/secret' do
+  erb :secret
+end
+
+post '/secret' do 
+  @secret = params[:secret].reverse
+  erb :secret
+end
