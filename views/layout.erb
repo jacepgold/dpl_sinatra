@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Learning Sinatra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  </head>
+  <body>
+    <nav class="purple">
+      <a class="btn blue" href="/">Home</a>
+      <a class="btn purple" href="/code">Code</a>
+      <a class="btn orange" href="/people?name=jace">Jace</a>
+      <a class="btn red" href="/people?name=alec">Alec</a>
+      <a class="btn" href="/people?name=travis">Travis</a>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  </body>
+</html>
